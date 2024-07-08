@@ -363,3 +363,72 @@
 @media (max-width: 360px) {
 
 }
+
+
+
+.sunday-worship-container {
+    display: flex;
+    margin-top: 150px;
+}
+.worship-header {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    color: var(--hover-color);
+    font-weight: 700;
+}
+.worship-info-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+}
+.sunday-header {
+    font-size: 30px;
+    font-family: var(--font-header);
+    font-weight: 700;
+    color: var(--hover-color);
+    margin: 20px 0;
+}
+.expland-header {
+    text-transform: capitalize;
+    color: #504f50;
+    font-size: 20px;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+.expland-text {
+    font-size: 20px;
+    font-family: var(--font-body);
+    margin-top: 10px;
+}
+
+.text-expland.ed {
+    margin-top: 30px;
+}
+
+
+@media (max-width: 990px) {
+    .sunday-worship-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .worship-info-container {
+        width: 100%;
+        /* margin-bottom: 20px; */
+        padding: 20px 10px;
+    }
+    .sunday-header {
+        text-align: center;
+    }
+    .worship-header {
+        text-align: center;
+    }
+}
+@media (max-width: 456px) {
+    .brother-jabel img {
+        width: 100%;
+    }
+}
