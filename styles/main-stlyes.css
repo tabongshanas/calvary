@@ -364,7 +364,7 @@
         height: 330px;
     }
 }
-@media (max-width: 370px) {
+@media (max-width: 350px) {
     .landing-top-container {
         flex-direction: column;
     }
@@ -847,5 +847,152 @@
 @media (max-width: 380px) {
     .main-message-link a i {
         margin-left: 100px;
+    }
+}
+
+
+
+
+.kid-student-container {
+    margin-top: 400px;
+    padding-left: 50px;
+    background-image: url('/images/logos/back-dot.png');
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.student-info a {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+.student-info:hover {
+    z-index: 10;
+}
+.student-info.ed {
+    position: relative;
+    left: -50px;
+    top: -50px;
+}
+.kid-student-container {
+    display: flex;
+    justify-content: center;
+}
+.main-student-imfo {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/site_images/message-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-student-imfo.change-image {
+    background-image: url('/images/site_images/students.jpg');
+}
+
+.main-student-imfo::after {
+    content: '';
+    background-color: #45a29dc5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.main-student-imfo.change-image::after {
+    background-color: #70bd52b7;
+} 
+.main-student-imfo.change-image:hover::after {
+    background-color: #70bd5250;
+} 
+
+.main-student-imfo:hover::after {
+    background-color: #45a29d4d;
+}
+.another-back {
+    background-image: url('/images/logos/dash-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1000px) {
+    .main-student-imfo {
+        width: 450px;
+        height: 350px;
+    }
+    .student-info a {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 890px) {
+    .main-student-imfo {
+        width: 400px;
+        height: 300px;
+    }
+    .student-info a {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 830px) {
+    .kid-student-container {
+        margin-top: 700px;
+    }
+}
+@media (max-width: 785px) {
+    .main-student-imfo {
+        width: 350px;
+        height: 250px;
+    }
+    .student-info a {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 685px) {
+    .main-student-imfo {
+        width: 300px;
+        height: 200px;
+    }
+    .kid-student-container {
+        margin-top: 600px;
+    }
+}
+@media (max-width: 580px) {
+    .main-student-imfo {
+        width: 250px;
+        height: 150px;
+    }
+    .student-info a {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 480px) {
+    .main-student-imfo {
+        width: 200px;
+        height: 130px;
+    }
+    .student-info a {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 325px) {
+    .kid-student-container {
+        margin-top: 700px;
     }
 }
