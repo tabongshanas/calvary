@@ -432,3 +432,178 @@
         width: 100%;
     }
 }
+
+
+
+.text-slide-container {
+    font-size: 4rem;
+    margin-top: 150px;
+    overflow: hidden;
+    font-family: roboto,sans-serif;
+    font-weight: 700;
+    background-image: url('/images/logos/back-dot.png');
+}
+
+.text-slide-container span {
+    -webkit-text-stroke: 2px var(--navigation-color);
+    color: transparent;
+}
+.text-slide-container p {
+    white-space: nowrap;
+    margin: 0;
+    padding: 50px 0;
+    animation: move_text 6s ease-in infinite;
+}
+
+@keyframes move-text {
+    0% {
+      margin-left: -100%;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
+
+
+
+  .change-back {
+    height: 300px;
+    margin-top: 100px;
+    background-image: url('/images/logos/dash-back.png');
+  }
+  .message-container {
+    /* height: 60vh; */
+    background-image: url('/images/site_images/message-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 50px;
+    z-index: 1;
+  }
+  .message-container::after {
+    content: '';
+    background-color: #45a29dc9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .message-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .message-container {
+    width: 500px;
+    margin-right: 50px;
+  }
+  .message-container span {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--header-color);
+    font-family: roboto-condensed,sans-serif;
+  }
+  .message-container p {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-header);
+  }
+  
+  .main-message-link a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: var(--font-header);
+    font-weight: 700;
+    color: var(--hover-color);
+    transition: 0.5s;
+  }
+  .main-message-link a:hover {
+    cursor: pointer;
+    color: var(--header-color);
+  }
+  .main-message-link a i {
+    margin-left: 200px;
+  }
+
+  .horizontal-dash-line {
+    border-bottom: 3px dashed;
+    margin-top: 20px;
+  }
+  .message-link.ed {
+    margin: 50px 0;
+  }
+
+@media (max-width: 960px) {
+    .message-container {
+        width: 400px;
+    }
+    .message-container span {
+        font-size: 25px;
+    }
+    .message-container p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .message-text-container {
+        flex-direction: column;
+    }
+    .message-container {
+        width: 600px;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    .message-container span {
+        font-size: 30px;
+    }
+    .message-container p {
+        font-size: 3rem;
+    }
+    .text-slide-container {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 680px) {
+    .message-text-container {
+        flex-direction: column;
+    }
+    .message-container {
+        width: 500px;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    .message-container span {
+        font-size: 25px;
+    }
+    .message-container p {
+        font-size: 2.5rem;
+    }
+    .main-message-link a {
+        font-size: 27px;
+    }
+}
+@media (max-width: 502px) {
+    .message-container {
+        width: 100%;
+        padding: 50px;
+    }
+    .message-container {
+        line-height: 50px;
+    }
+    .message-fix {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 380px) {
+    .main-message-link a i {
+        margin-left: 100px;
+    }
+}
