@@ -737,6 +737,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
   }
   .message-container {
     width: 500px;
@@ -851,10 +852,212 @@
 }
 
 
+.shot-cut-container {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.shor-cut-header {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: var(--hover-color);
+    margin-bottom: 30px;
+}
+.shot-cut-content {
+    display: flex;
+}
+.main-shot-cut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+.secondary-btn.ed {
+    margin-top: 50px;
+}
+.secondary-btn.ed a {
+    padding: 15px 70px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.together-container {
+    width: 600px;
+    margin-top: 100px;
+}
+.together-header {
+    text-transform: uppercase;
+    color: var(--hover-color);
+    font-family: var(--font-header);
+    font-size: 28px;
+}
+.togrhther-text {
+    font-family: var(--font-body);
+    font-size: 20px;
+    color: #4f4c4d;
+    margin-top: 30px;
+}
+.togrhther-text a {
+    color: #4f4c4d;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+    border-bottom: 3px solid var(--background-color);
+}
+.togrhther-text a:hover {
+    cursor: pointer;
+    color: var(--background-color);
+}
+
+.primary-btn.pbed {
+    margin-top: 50px;
+}
+.primary-btn.pbed a {
+    color: #4f4c4d;
+    padding: 13px 20px;
+}
+.primary-btn.pbed a:hover {
+    color: white;
+}
+
+.prayer {
+    display: flex;
+    justify-content: center;
+}
+.need-prayer {
+    margin-top: 150px;
+}
+.need-prayer a {
+    border: 5px solid #4f4c4d;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    color: var(--hover-color);
+    font-weight: 800;
+    text-decoration: none;
+    padding: 3rem 5rem;
+    transition: 0.4s;
+    white-space: nowrap;
+}
+.need-prayer a span {
+    -webkit-text-stroke: 3px #4f4c4d;
+    color: transparent;
+}
+
+.need-prayer a:hover {
+    background-color: #4f4c4d;
+    color: white;
+}
+.need-prayer a:hover span {
+    -webkit-text-stroke: 2px white;
+}
+
+.social img {
+    width: 120px;
+}
+
+
+
+@media (max-width: 1050px) {
+    .social img {
+        width: 100px;
+    }
+    .shot-cut-container {
+        margin-left: 50px;
+    }
+}
+@media (max-width: 950px) {
+    .shot-cut-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-shot-cut {
+        margin-top: 50px;
+        align-items: center;
+        padding-top: 10px;
+        box-shadow: 1px 1px 2px 1px;
+    }
+}
+@media (max-width: 700px) {
+    .shor-cut-header {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .together-header {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+@media (max-width: 690px) {
+    .together-container {
+        width: 500px;
+    }
+}
+@media (max-width: 600px) {
+    .shot-cut-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 550px) {
+    .together-container {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1030px) {
+    .need-prayer a {
+        padding: 2rem 4rem;
+    }
+}
+@media (max-width: 1000px) {
+    .need-prayer a {
+        font-size: 35px;
+    }
+}
+@media (max-width: 900px) {
+    .need-prayer a {
+        font-size: 30px;
+    }
+}
+@media (max-width: 790px) {
+    .need-prayer a {
+        font-size: 25px;
+    }
+}
+@media (max-width: 690px) {
+    .need-prayer a {
+        font-size: 20px;
+    }
+}
+@media (max-width: 570px) {
+    .need-prayer a {
+        padding: 1.5rem 2.5rem;
+    }
+}
+@media (max-width: 530px) {
+    .need-prayer a {
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width: 500px) {
+    .need-prayer a {
+        padding: 1rem 2rem;
+        font-size: 15px;
+    }
+}
+
+
 
 
 .kid-student-container {
-    margin-top: 400px;
+    margin-top: 150px;
     padding-left: 50px;
     background-image: url('/images/logos/back-dot.png');
     padding-top: 100px;
@@ -895,7 +1098,7 @@
 }
 
 .main-student-imfo.change-image {
-    background-image: url('/images/site_images/students.jpg');
+    background-image: url('/images/site_images/kid.jpg');
 }
 
 .main-student-imfo::after {
@@ -912,7 +1115,7 @@
     background-color: #70bd52b7;
 } 
 .main-student-imfo.change-image:hover::after {
-    background-color: #70bd5250;
+    background-color: #70bd5263;
 } 
 
 .main-student-imfo:hover::after {
@@ -950,11 +1153,11 @@
         font-size: 1.5rem;
     }
 }
-@media (max-width: 830px) {
+/* @media (max-width: 830px) {
     .kid-student-container {
         margin-top: 700px;
     }
-}
+} */
 @media (max-width: 785px) {
     .main-student-imfo {
         width: 350px;
@@ -969,9 +1172,9 @@
         width: 300px;
         height: 200px;
     }
-    .kid-student-container {
+    /* .kid-student-container {
         margin-top: 600px;
-    }
+    } */
 }
 @media (max-width: 580px) {
     .main-student-imfo {
@@ -991,8 +1194,8 @@
         font-size: 1rem;
     }
 }
-@media (max-width: 325px) {
+/* @media (max-width: 325px) {
     .kid-student-container {
         margin-top: 700px;
     }
-}
+} */
