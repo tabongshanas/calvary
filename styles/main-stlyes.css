@@ -1199,3 +1199,223 @@
         margin-top: 700px;
     }
 } */
+
+
+
+
+
+.footer-container {
+    background-color: black;
+    padding: 50px 20px;
+    margin-top: 150px;
+}    
+
+.back-image {
+    display: flex;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+}
+.vertical-line {
+    background-color: rgb(138, 138, 138);
+    height: 130px;
+    width: 1px;
+    margin: 0 20px;
+}
+.footer-text {
+    color: #bcbec0;
+    width: 210px;
+    font-family: var(--font-body);
+    line-height: 20px;
+    font-size: 15px;
+}
+.footer-text span {
+    color: var(--background-color);
+}
+.footer-text span:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--background-color);
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    /* width: 450px; */
+    margin-top: 50px;
+}
+.icon a {
+    text-decoration: none;
+}
+.icon i {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1877F2;
+    color: white;
+    border: 3px solid #1877F2;
+    transition: 0.3s;
+}
+.icon i:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #1877F2;
+}
+
+
+.icon .youtube {
+    background-color: #FF0000;
+    border: 3px solid #FF0000;
+}
+.icon:hover .youtube {
+    color: #FF0000;
+} 
+
+.icon .whatsapp {
+    background-color: #25D366;
+    border: 3px solid #25D366;
+}
+.icon:hover .whatsapp {
+    color: #25D366;
+} 
+
+.icon .snapchat {
+    background-color: #fffc00;
+    border: 3px solid #fffc00;
+}
+.icon:hover .snapchat {
+    color: #fffc00;
+} 
+
+.icon .instagram {
+    background-color: #c13584;
+    border: 3px solid #c13584;
+}
+.icon:hover .instagram {
+    color: #c13584;
+} 
+
+
+.footer-link-container {
+    display: flex;
+    margin-left: 40px;
+}
+.footer-link-content {
+    width: 180px;
+    margin-left: 20px;
+}
+.footer-link-header a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.footer-link-header a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.main-footer-link {
+    margin-top: 20px;
+    line-height: 30px;
+}
+.footer-link a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #bcbec0;
+}
+.footer-link a:hover {
+    cursor: pointer;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+.copyright {
+    font-size: 23px;
+    margin: 0 20px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.copyright i {
+    cursor: pointer;
+    color: white;
+}
+.copyright a {
+    color: var(--primary_color);
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--background-color);
+}
+.copyright a:hover {
+    cursor: pointer;
+    color: white;
+    border-bottom: 2px solid var(--background-color);
+}
+
+
+@media (max-width: 1300px) {
+    .back-image {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-link-container {
+        /* order: 2; */
+        width: 100%;
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+    .logo-social-container {
+        order: 4;
+        margin-top: 70px;
+    }
+    .footer-link-content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer-link-container {
+        flex-wrap: wrap;
+    }
+    .footer-link-content {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-link-header a {
+        font-size: 25px;
+    }
+    .footer-link a {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo-text-container {
+        flex-direction: column;
+    }
+    .vertical-line {
+        height: 1px;
+        width: 250px;
+        margin: 20px 0;
+    }
+    .logo-social-container {
+        width: 350px;
+    }
+}
